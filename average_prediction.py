@@ -12,6 +12,6 @@ def average(*pathes):
     average_out['prediction'] = predictions_average
     return average_out
 if __name__ == '__main__':
-    pathes = ['~/Downloads/catbooster.csv','~/Downloads/prediction_test_baseline_full_train_set_full_train_median_rf.csv']
+    pathes = ['~/Downloads/catbooster_mode_depth10.csv','~/Downloads/prediction_test_baseline_full_train_set_full_train_median_rf.csv']
     average_out = average(*pathes)
-    average_out.to_csv('average_catboost_and_rf_baseline.csv',index=False)
+    average_out.to_csv('average_catboost_deep_and_rf_baseline.csv',index=False)
